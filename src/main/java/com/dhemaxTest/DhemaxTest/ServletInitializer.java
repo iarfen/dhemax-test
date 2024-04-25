@@ -1,6 +1,6 @@
-package com.sermalucTest.SermalucTest;
+package com.dhemaxTest.DhemaxTest;
 
-import com.sermalucTest.SermalucTestApplication;
+import com.dhemaxTest.DhemaxTestApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
@@ -8,7 +8,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SermalucTestApplication.class);
+		return application.sources(DhemaxTestApplication.class);
 	}
 
 }

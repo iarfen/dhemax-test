@@ -1,11 +1,11 @@
-# Test de Sermaluc - Fullstack Java Senior
-Este es el back-end del test de Sermaluc, desarrollado en SpringBoot.
+# Test de Dhemax - Fullstack Developer Senior
+Este es el back-end del test de Dhemax, desarrollado en SpringBoot.
 
 ## Iniciar
 Para ejecutar la aplicación se debe utilizar el comando ./gradlew bootRun.
 
-## Tests
-Los test están desarrollados utilizando JUnit. Se encuentran dentro de src/test, y se pueden ejecutar desde IntelliJ.
+## Configuración de PostgreSQL
+Se debe agregar el archivo test_dhemax.sql al servidor de PostgreSQL local.
 
 ## Swagger
 Para iniciar Swagger se debe visitar la siguiente URL:

@@ -1,4 +1,4 @@
-package com.sermalucTest;
+package com.dhemaxTest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -8,16 +8,16 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@ComponentScan(basePackages = {"com.coopeuchTest"})
+@ComponentScan(basePackages = {"com.dhemaxTest"})
 @SpringBootApplication
-@EnableJpaRepositories("com.coopeuchTest.dao")
-@EntityScan("com.coopeuchTest.model")
+@EnableJpaRepositories("com.dhemaxTest.dao")
+@EntityScan("com.DhemaxTest.model")
 @Configuration
 @EnableAutoConfiguration
-public class SermalucTestApplication {
+public class DhemaxTestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SermalucTestApplication.class, args);
+		SpringApplication.run(DhemaxTestApplication.class, args);
 	}
 
 }

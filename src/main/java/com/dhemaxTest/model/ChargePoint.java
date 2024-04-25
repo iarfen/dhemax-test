@@ -1,4 +1,4 @@
-package com.sermalucTest.model;
+package com.dhemaxTest.model;
 
 import jakarta.persistence.*;
 
@@ -7,67 +7,55 @@ import java.util.List;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "users")
+@Table(name = "charge_points")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
-public class User {
-    
+public class ChargePoint {
+
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     public Long id;
-    
-    @Column
-    @NotNull
-    @NotEmpty
-    public String name;
 
     @Column
     @NotNull
     @NotEmpty
-    @Pattern(regexp="[A-Za-z0-9.-]+@[A-Za-z0-9]+\\.[A-Za-z0-9]+", message="Please provide a valid email address")
-    public String email;
+    public String status;
 
     @Column
     @NotNull
     @NotEmpty
-    @Pattern(regexp="[A-Za-z0-9]+[0-9][0-9]", message="Please provide a valid password")
-    public String password;
-
-    @Column
-    @OneToMany
-    public List<Phone> phones;
+    public String operator;
 
     @Column
     @NotNull
     @NotEmpty
-    public Date createdAt;
+    public int connections;
 
     @Column
     @NotNull
     @NotEmpty
-    public Date modifiedAt;
+    public String latitude;
 
     @Column
     @NotNull
     @NotEmpty
-    public Date lastLogin;
+    public String longitude;
 
     @Column
     @NotNull
     @NotEmpty
-    public String token;
+    public String country;
 
     @Column
     @NotNull
     @NotEmpty
-    public Boolean isActive;
+    public int power;
 }
